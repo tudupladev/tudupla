@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/tudupla/static/js/main.31403bc8.js",
+    "static/media/work.png": "/tudupla/static/media/work.3f7614bee49e18c6d51a.png",
+    "static/media/contactUsImg.jpg": "/tudupla/static/media/contactUsImg.f5ce93e82345f163cbb9.jpg",
+    "static/media/teamwork.jpg": "/tudupla/static/media/teamwork.aa89ac108e4b768f55cd.jpg",
+    "static/media/home.jpg": "/tudupla/static/media/home.a36754453d767979239f.jpg",
+    "static/media/luis.jpg": "/tudupla/static/media/luis.dfdad0fd33901b54ac7d.jpg",
+    "static/media/logo.png": "/tudupla/static/media/logo.4cbecde58e09895b0780.png",
+    "static/media/ana.jpeg": "/tudupla/static/media/ana.ab4d7797693b3498bad3.jpeg",
+    "static/media/rent2.svg": "/tudupla/static/media/rent2.77d17a7018f1d4cad85fd69c0137beae.svg",
+    "static/media/buy2.svg": "/tudupla/static/media/buy2.725efae3b388df36c9629f69bd623265.svg",
+    "static/media/messure2.svg": "/tudupla/static/media/messure2.b4caaa36c9b81d55d1b588daf8a1d18c.svg",
+    "static/media/sale2.svg": "/tudupla/static/media/sale2.fa3a9476e3d9efdf0f502d61c06716ea.svg",
+    "index.html": "/tudupla/index.html",
+    "main.31403bc8.js.map": "/tudupla/static/js/main.31403bc8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.31403bc8.js"
+  ]
+}
