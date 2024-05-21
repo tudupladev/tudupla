@@ -29,7 +29,6 @@ const Contact = () => {
   };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    console.log("formState", formState);
     e.persist();
     e.preventDefault();
     setIsSubmitting(true);
@@ -56,20 +55,27 @@ const Contact = () => {
     <>
       <Header />
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
-          <ContactUsImg src={ContactImg} alt="contact" />
-        </Grid>
-        <GridRight item xs={12} sm={6}>
+        {!isXs && (
+          <Grid item xs={12} md={6}>
+            <ContactUsImg src={ContactImg} alt="contact" />
+          </Grid>
+        )}
+        <GridRight item xs={12} md={6} pr={isXs ? 0 : 3}>
           <Typography
             variant={isXs ? "h4" : "h3"}
             fontWeight="bold"
             color={theme.palette.primary.main}
             textAlign="center"
             pb={{ xs: "1rem", md: "0" }}
+            mt={{ xs: "1rem", md: "0" }}
           >
             Contacto
           </Typography>
-          <ContainerBox>
+          <ContainerBox
+            style={
+              isXs ? { margin: "0px 5px 20px 5px" } : { marginTop: "20px" }
+            }
+          >
             <Paper style={{ padding: 16 }}>
               <form onSubmit={sendEmail}>
                 <Grid container alignItems="flex-start" spacing={2}>

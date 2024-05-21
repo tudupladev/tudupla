@@ -1,21 +1,20 @@
-import { Box, Grid, styled } from '@mui/material';
+import { Box, Grid, styled } from "@mui/material";
 
-export const TeamImg = styled('img')({
-  height: '100vh',
-  width: '100%',
+export const TeamImg = styled("img")({
+  height: "100vh",
+  width: "100%",
 });
 
 export const TeamGrid = styled(Grid)({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '40%',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
 });
 
 export const ContainerBox = styled(Box)({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
 });

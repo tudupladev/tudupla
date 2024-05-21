@@ -6,14 +6,16 @@ import { teamMembers } from "./constant";
 import { Header } from "../../layouts";
 import theme from "../../muiTheme";
 import TeamCard from "../common/components/TeamCard/TeamCard";
+import { useResolution } from "features/common/hooks/useResolution";
 
 const AboutUs = () => {
+  const { isXs } = useResolution();
   return (
     <Box>
       <Header />
       <ContainerBox>
-        <TeamImg src={Work} alt="tudupla" />
-        <TeamGrid container md={8} xs={10}>
+        {!isXs && <TeamImg src={Work} alt="tudupla" />}
+        <TeamGrid container md={12} xs={12} width={isXs ? "80%" : "40%"}>
           <Typography
             variant="h3"
             color={theme.palette.primary.main}
@@ -61,7 +63,8 @@ const AboutUs = () => {
                 <Grid
                   key={member.name}
                   item
-                  xs={6}
+                  xs={12}
+                  md={6}
                   display="flex"
                   justifyContent="center"
                   p={2}
